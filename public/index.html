@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css"> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>weather chat</title>
+</head>
+<body>
+
+
+  <div class="page-header">
+    <h1>WEATHER CHAT</h1>
+  </div>
+
+ <div class="start-form">
+<form>
+     <h3>Enter city</h3>
+
+      <div class="input-group mb-3">
+          <input type="text" class="form-control" id = "city" placeholder="Enter city" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+           
+            <button class="btn btn-info find-temp-btn" type="submit">Find TEMP</button>
+          </div>
+      </div>
+  </form> 
+<!-- end start-form -->
+</div>
+
+<div class="sort-form">
+  <form>
+       <h4>sort by</h4>
+<div class="input-group">
+  <select class="custom-select sotr-select" id="inputGroupSelect04">
+    <option selected>Choose sotr by..</option>
+    <option value="1">time</option>
+    <option value="2">temp</option>
+    <option value="3">city name</option>
+  </select>
+  <div class="input-group-append">
+    <button class="btn btn-warning sort-btn" type="submit">sort</button>
+  </div>
+</div>
+</form> 
+<!-- end sort-form -->
+</div>
+
+  <p class="not-found">
+  </p>
+
+  <div class="enteries-city">  
+  </div>
+
+
+  <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="handlebars/dist/handlebars.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
